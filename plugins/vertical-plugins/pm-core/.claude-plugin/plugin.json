@@ -1,30 +1,8 @@
 {
   "name": "pm-core",
-  "version": "1.0.0",
   "description": "Linear epic planning, PM reporting, and agent orchestration",
   "author": {
-    "name": "Capxul"
-  },
-  "commands": [
-    {
-      "name": "plan-epic",
-      "description": "Break an epic into Linear issues",
-      "file": "commands/plan-epic.md"
-    },
-    {
-      "name": "report",
-      "description": "Generate progress report",
-      "file": "commands/report.md"
-    },
-    {
-      "name": "orchestrate",
-      "description": "Route work to agents",
-      "file": "commands/orchestrate.md"
-    }
-  ],
-  "skills": [
-    "linear-epic-planning",
-    "pm-reporting",
-    "agent-orchestrator"
-  ]
+    "name": "Capxul",
+    "email": "0x69ir@gmail.com"
+  }
 }
