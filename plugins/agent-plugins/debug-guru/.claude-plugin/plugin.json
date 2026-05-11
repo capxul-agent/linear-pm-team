@@ -1,0 +1,13 @@
+{
+  "name": "debug-guru",
+  "version": "1.0.0",
+  "description": "Debugs APIs, navigates browsers, designs frontends, and creates skills",
+  "author": {
+    "name": "Capxul"
+  },
+  "type": "agent",
+  "agent": "agents/debug-guru.md",
+  "skills": [
+    "debug-pipeline"
+  ]
+}

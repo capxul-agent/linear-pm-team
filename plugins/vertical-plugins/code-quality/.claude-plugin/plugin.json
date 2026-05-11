@@ -1,0 +1,33 @@
+{
+  "name": "code-quality",
+  "version": "1.0.0",
+  "description": "PR lifecycle, code review, and TypeScript best practices",
+  "author": {
+    "name": "Capxul"
+  },
+  "commands": [
+    {
+      "name": "pr",
+      "description": "Create a pull request",
+      "file": "commands/pr.md"
+    },
+    {
+      "name": "review-pr",
+      "description": "Follow up on existing PR",
+      "file": "commands/review-pr.md"
+    },
+    {
+      "name": "simplify",
+      "description": "Review and improve code",
+      "file": "commands/simplify.md"
+    }
+  ],
+  "skills": [
+    "create-pr",
+    "follow-up-on-pr",
+    "simplify",
+    "ban-type-assertions",
+    "no-use-effect",
+    "fix-knip-unused-exports"
+  ]
+}

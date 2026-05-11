@@ -1,0 +1,24 @@
+{
+  "name": "research",
+  "version": "1.0.0",
+  "description": "Code exploration and optimization experiments",
+  "author": {
+    "name": "Capxul"
+  },
+  "commands": [
+    {
+      "name": "experiment",
+      "description": "Run optimization experiment",
+      "file": "commands/experiment.md"
+    },
+    {
+      "name": "explore",
+      "description": "Explore codebase",
+      "file": "commands/explore.md"
+    }
+  ],
+  "skills": [
+    "autoresearch",
+    "code-spelunker"
+  ]
+}

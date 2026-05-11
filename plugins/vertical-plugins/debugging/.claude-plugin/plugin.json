@@ -1,0 +1,26 @@
+{
+  "name": "debugging",
+  "version": "1.0.0",
+  "description": "Browser navigation, frontend debugging, API interception, and skill creation",
+  "author": {
+    "name": "Capxul"
+  },
+  "commands": [
+    {
+      "name": "debug-api",
+      "description": "Intercept API calls",
+      "file": "commands/debug-api.md"
+    },
+    {
+      "name": "create-skill",
+      "description": "Create a new skill",
+      "file": "commands/create-skill.md"
+    }
+  ],
+  "skills": [
+    "browser-navigation",
+    "frontend-design",
+    "http-toolkit-intercept",
+    "skill-creation"
+  ]
+}

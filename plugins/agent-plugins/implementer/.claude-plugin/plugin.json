@@ -1,0 +1,13 @@
+{
+  "name": "implementer",
+  "version": "1.0.0",
+  "description": "Implements features, manages PR lifecycle, and ensures code quality",
+  "author": {
+    "name": "Capxul"
+  },
+  "type": "agent",
+  "agent": "agents/implementer.md",
+  "skills": [
+    "pr-lifecycle"
+  ]
+}
