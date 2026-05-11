@@ -1,13 +1,8 @@
 {
   "name": "analyst",
-  "version": "1.0.0",
   "description": "Security scanning, threat modeling, and deep-dive analysis",
   "author": {
-    "name": "Capxul"
-  },
-  "type": "agent",
-  "agent": "agents/analyst.md",
-  "skills": [
-    "security-deep-dive"
-  ]
+    "name": "Capxul",
+    "email": "0x69ir@gmail.com"
+  }
 }

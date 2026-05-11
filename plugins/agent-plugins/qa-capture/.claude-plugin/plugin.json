@@ -1,13 +1,8 @@
 {
   "name": "qa-capture",
-  "version": "1.0.0",
   "description": "Records demos, verifies claims, runs QA flows, and captures evidence",
   "author": {
-    "name": "Capxul"
-  },
-  "type": "agent",
-  "agent": "agents/qa-capture.md",
-  "skills": [
-    "evidence-pipeline"
-  ]
+    "name": "Capxul",
+    "email": "0x69ir@gmail.com"
+  }
 }

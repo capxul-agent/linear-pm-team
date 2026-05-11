@@ -1,26 +1,8 @@
 {
   "name": "security",
-  "version": "1.0.0",
   "description": "Security scanning, vulnerability validation, and threat modeling",
   "author": {
-    "name": "Capxul"
-  },
-  "commands": [
-    {
-      "name": "security-scan",
-      "description": "Scan code for vulnerabilities",
-      "file": "commands/security-scan.md"
-    },
-    {
-      "name": "threat-model",
-      "description": "Generate STRIDE threat model",
-      "file": "commands/threat-model.md"
-    }
-  ],
-  "skills": [
-    "security-review",
-    "commit-security-scan",
-    "vulnerability-validation",
-    "threat-model-generation"
-  ]
+    "name": "Capxul",
+    "email": "0x69ir@gmail.com"
+  }
 }

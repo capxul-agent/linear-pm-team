@@ -1,13 +1,8 @@
 {
   "name": "reporter",
-  "version": "1.0.0",
   "description": "Generates reports, documentation, and visual presentations",
   "author": {
-    "name": "Capxul"
-  },
-  "type": "agent",
-  "agent": "agents/reporter.md",
-  "skills": [
-    "report-generation"
-  ]
+    "name": "Capxul",
+    "email": "0x69ir@gmail.com"
+  }
 }

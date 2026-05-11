@@ -1,43 +1,8 @@
 {
   "name": "evidence-capture",
-  "version": "1.0.0",
-  "description": "Demo recording, verification, QA testing, and video composition with Remotion",
+  "description": "Demo recording, verification, QA testing, and video composition",
   "author": {
-    "name": "Capxul"
-  },
-  "commands": [
-    {
-      "name": "demo",
-      "description": "Record a demo video",
-      "file": "commands/demo.md"
-    },
-    {
-      "name": "verify",
-      "description": "Test a claim with evidence",
-      "file": "commands/verify.md"
-    },
-    {
-      "name": "qa-test",
-      "description": "Run automated QA flow",
-      "file": "commands/qa-test.md"
-    }
-  ],
-  "skills": [
-    "capture",
-    "compose",
-    "verify",
-    "showcase",
-    "tuistory",
-    "pty-capture",
-    "true-input",
-    "agent-browser",
-    "agent-control",
-    "agent-cli"
-  ],
-  "binaries": [
-    "bin/tctl"
-  ],
-  "scripts": [
-    "scripts/render-showcase.sh"
-  ]
+    "name": "Capxul",
+    "email": "0x69ir@gmail.com"
+  }
 }

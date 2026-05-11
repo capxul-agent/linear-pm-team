@@ -1,13 +1,8 @@
 {
   "name": "epic-conductor",
-  "version": "1.0.0",
-  "description": "Master controller agent that orchestrates the entire team, plans epics, and routes work",
+  "description": "Master controller agent that orchestrates the entire team",
   "author": {
-    "name": "Capxul"
-  },
-  "type": "agent",
-  "agent": "agents/epic-conductor.md",
-  "skills": [
-    "scribe"
-  ]
+    "name": "Capxul",
+    "email": "0x69ir@gmail.com"
+  }
 }
