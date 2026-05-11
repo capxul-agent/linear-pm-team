@@ -1,160 +1,206 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "capsule-factory",
-  "version": "1.0.0",
-  "description": "Capxul Agent Team — A cohesive plugin ecosystem for managing Capxul's AI agent workforce. 7 vertical plugins with shared skills and commands, 6 agent plugins with specialized agent definitions.",
-  "author": "Capxul",
-  "license": "MIT",
+  "description": "Capxul Agent Team \u2014 A cohesive plugin ecosystem for managing AI agent workforces. 7 vertical plugins with shared skills and commands, 6 agent plugins with specialized agent definitions.",
+  "owner": {
+    "name": "Capxul",
+    "email": "0x69ir@gmail.com"
+  },
   "plugins": [
     {
-      "id": "pm-core",
-      "name": "PM Core",
-      "type": "vertical",
-      "path": "plugins/vertical-plugins/pm-core",
-      "description": "Linear epic planning, PM reporting, and agent orchestration",
-      "commands": ["/plan-epic", "/report", "/orchestrate"],
-      "skills": ["linear-epic-planning", "pm-reporting", "agent-orchestrator"],
-      "mcpDependencies": ["linear", "github"]
+      "name": "pm-core",
+      "description": "Linear epic planning, PM reporting, and agent orchestration. Commands: /plan-epic, /report, /orchestrate",
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "project-management",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/vertical-plugins/pm-core",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/vertical-plugins/pm-core"
     },
     {
-      "id": "code-quality",
-      "name": "Code Quality",
-      "type": "vertical",
-      "path": "plugins/vertical-plugins/code-quality",
-      "description": "PR lifecycle, code review, and TypeScript best practices",
-      "commands": ["/pr", "/review-pr", "/simplify"],
-      "skills": ["create-pr", "follow-up-on-pr", "simplify", "ban-type-assertions", "no-use-effect", "fix-knip-unused-exports"],
-      "mcpDependencies": ["github"]
+      "name": "code-quality",
+      "description": "PR lifecycle, code review, and TypeScript best practices. Commands: /pr, /review-pr, /simplify",
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/vertical-plugins/code-quality",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/vertical-plugins/code-quality"
     },
     {
-      "id": "security",
-      "name": "Security",
-      "type": "vertical",
-      "path": "plugins/vertical-plugins/security",
-      "description": "Security scanning, vulnerability validation, and threat modeling",
-      "commands": ["/security-scan", "/threat-model"],
-      "skills": ["security-review", "commit-security-scan", "vulnerability-validation", "threat-model-generation"],
-      "mcpDependencies": ["github"]
+      "name": "security",
+      "description": "Security scanning, vulnerability validation, and threat modeling. Commands: /security-scan, /threat-model",
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "security",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/vertical-plugins/security",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/vertical-plugins/security"
     },
     {
-      "id": "evidence-capture",
-      "name": "Evidence Capture",
-      "type": "vertical",
-      "path": "plugins/vertical-plugins/evidence-capture",
-      "description": "Demo recording, verification, QA testing, and video composition with Remotion",
-      "commands": ["/demo", "/verify", "/qa-test"],
-      "skills": ["capture", "compose", "verify", "showcase", "tuistory", "pty-capture", "true-input", "agent-browser", "agent-control", "agent-cli"],
-      "binaries": ["bin/tctl"],
-      "scripts": ["scripts/render-showcase.sh"],
-      "remotion": "remotion/",
-      "mcpDependencies": []
+      "name": "evidence-capture",
+      "description": "Demo recording, verification, QA testing, and video composition with Remotion. Commands: /demo, /verify, /qa-test",
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "testing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/vertical-plugins/evidence-capture",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/vertical-plugins/evidence-capture"
     },
     {
-      "id": "research",
-      "name": "Research",
-      "type": "vertical",
-      "path": "plugins/vertical-plugins/research",
-      "description": "Code exploration and optimization experiments",
-      "commands": ["/experiment", "/explore"],
-      "skills": ["autoresearch", "code-spelunker"],
-      "mcpDependencies": []
+      "name": "research",
+      "description": "Code exploration and optimization experiments. Commands: /experiment, /explore",
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/vertical-plugins/research",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/vertical-plugins/research"
     },
     {
-      "id": "documentation",
-      "name": "Documentation",
-      "type": "vertical",
-      "path": "plugins/vertical-plugins/documentation",
-      "description": "Wiki generation, humanized writing, and visual design",
-      "commands": ["/wiki", "/humanize", "/design"],
-      "skills": ["wiki", "human-writing", "visual-design"],
-      "mcpDependencies": []
+      "name": "documentation",
+      "description": "Wiki generation, humanized writing, and visual design. Commands: /wiki, /humanize, /design",
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "documentation",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/vertical-plugins/documentation",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/vertical-plugins/documentation"
     },
     {
-      "id": "debugging",
-      "name": "Debugging",
-      "type": "vertical",
-      "path": "plugins/vertical-plugins/debugging",
-      "description": "Browser navigation, frontend debugging, API interception, and skill creation",
-      "commands": ["/debug-api", "/create-skill"],
-      "skills": ["browser-navigation", "frontend-design", "http-toolkit-intercept", "skill-creation"],
-      "mcpDependencies": []
+      "name": "debugging",
+      "description": "Browser navigation, frontend debugging, API interception, and skill creation. Commands: /debug-api, /create-skill",
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/vertical-plugins/debugging",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/vertical-plugins/debugging"
     },
     {
-      "id": "epic-conductor",
-      "name": "Epic Conductor Agent",
-      "type": "agent",
-      "path": "plugins/agent-plugins/epic-conductor",
+      "name": "epic-conductor",
       "description": "Master controller agent that orchestrates the entire team, plans epics, and routes work",
-      "agent": "agents/epic-conductor.md",
-      "skills": ["scribe"],
-      "verticalDependencies": ["pm-core", "code-quality", "security", "evidence-capture", "research", "documentation", "debugging"]
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "agent",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/agent-plugins/epic-conductor",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/agent-plugins/epic-conductor"
     },
     {
-      "id": "implementer",
-      "name": "Implementer Agent",
-      "type": "agent",
-      "path": "plugins/agent-plugins/implementer",
+      "name": "implementer",
       "description": "Implements features, manages PR lifecycle, and ensures code quality",
-      "agent": "agents/implementer.md",
-      "skills": ["pr-lifecycle"],
-      "verticalDependencies": ["code-quality", "evidence-capture", "debugging"]
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "agent",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/agent-plugins/implementer",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/agent-plugins/implementer"
     },
     {
-      "id": "analyst",
-      "name": "Analyst Agent",
-      "type": "agent",
-      "path": "plugins/agent-plugins/analyst",
+      "name": "analyst",
       "description": "Security scanning, threat modeling, and deep-dive analysis",
-      "agent": "agents/analyst.md",
-      "skills": ["security-deep-dive"],
-      "verticalDependencies": ["security", "research", "evidence-capture"]
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "agent",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/agent-plugins/analyst",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/agent-plugins/analyst"
     },
     {
-      "id": "reporter",
-      "name": "Reporter Agent",
-      "type": "agent",
-      "path": "plugins/agent-plugins/reporter",
+      "name": "reporter",
       "description": "Generates reports, documentation, and visual presentations",
-      "agent": "agents/reporter.md",
-      "skills": ["report-generation"],
-      "verticalDependencies": ["documentation", "pm-core", "evidence-capture"]
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "agent",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/agent-plugins/reporter",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/agent-plugins/reporter"
     },
     {
-      "id": "qa-capture",
-      "name": "QA Capture Agent",
-      "type": "agent",
-      "path": "plugins/agent-plugins/qa-capture",
+      "name": "qa-capture",
       "description": "Records demos, verifies claims, runs QA flows, and captures evidence",
-      "agent": "agents/qa-capture.md",
-      "skills": ["evidence-pipeline"],
-      "verticalDependencies": ["evidence-capture"]
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "agent",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/agent-plugins/qa-capture",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/agent-plugins/qa-capture"
     },
     {
-      "id": "debug-guru",
-      "name": "Debug Guru Agent",
-      "type": "agent",
-      "path": "plugins/agent-plugins/debug-guru",
+      "name": "debug-guru",
       "description": "Debugs APIs, navigates browsers, designs frontends, and creates skills",
-      "agent": "agents/debug-guru.md",
-      "skills": ["debug-pipeline"],
-      "verticalDependencies": ["debugging", "evidence-capture", "research"]
+      "author": {
+        "name": "Capxul"
+      },
+      "category": "agent",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/capxul-agent/capsule-factory.git",
+        "path": "plugins/agent-plugins/debug-guru",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/capxul-agent/capsule-factory/tree/main/plugins/agent-plugins/debug-guru"
     }
-  ],
-  "installCommand": "/install-team",
-  "mcpServers": {
-    "linear": {
-      "command": "npx",
-      "args": ["-y", "@linear/mcp-server"],
-      "env": ["LINEAR_API_KEY"]
-    },
-    "github": {
-      "command": "npx",
-      "args": ["-y", "@github/mcp-server"],
-      "env": ["GITHUB_PERSONAL_ACCESS_TOKEN"]
-    },
-    "bitwarden": {
-      "command": "npx",
-      "args": ["-y", "@bitwarden/sdk-napi"],
-      "env": ["BW_ACCESS_TOKEN"]
-    }
-  }
+  ]
 }
